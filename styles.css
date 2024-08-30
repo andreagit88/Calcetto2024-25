@@ -31,3 +31,9 @@ h2 {
 .presenze, .gol {
     font-weight: bold;
 }
+
+.regolamento {
+    list-style-type: disc;
+    margin-top: 20px;
+    padding-left: 20px;
+}
