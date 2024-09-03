@@ -24,14 +24,22 @@ h2 {
     font-size: 18px;
     padding: 5px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribuisce spazio tra il nome e il numero a destra */
     border-bottom: 1px solid #ccc;
+}
+
+.numero {
+    display: inline-block;
+    width: 20px; /* Fissa una larghezza per allineare i numeri */
+    text-align: right; /* Allinea a destra i numeri */
+    margin-right: 10px; /* Spazio tra il numero e il nome */
 }
 
 .presenze, .gol {
     font-weight: bold;
+    margin-left: auto; /* Sposta il numero "0" all'estrema destra */
 }
-
+  
 .regolamento {
     list-style-type: disc;
     margin-top: 20px;
