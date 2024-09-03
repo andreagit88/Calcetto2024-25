@@ -24,22 +24,27 @@ h2 {
     font-size: 18px;
     padding: 5px 0;
     display: flex;
-    justify-content: space-between; /* Distribuisce spazio tra il nome e il numero a destra */
+    justify-content: space-between;
     border-bottom: 1px solid #ccc;
 }
 
 .numero {
-    display: inline-block;
-    width: 20px; /* Fissa una larghezza per allineare i numeri */
-    text-align: right; /* Allinea a destra i numeri */
-    margin-right: 10px; /* Spazio tra il numero e il nome */
+    width: 30px; /* Assegna una larghezza fissa per i numeri */
+    text-align: left;
+    margin-right: 10px;
+}
+
+.nome {
+    flex-grow: 1; /* Fa sì che il nome si estenda fino a riempire lo spazio disponibile */
+    text-align: left;
 }
 
 .presenze, .gol {
     font-weight: bold;
-    margin-left: auto; /* Sposta il numero "0" all'estrema destra */
+    text-align: right;
+    width: 30px; /* Larghezza fissa per i numeri a destra */
 }
-  
+
 .regolamento {
     list-style-type: disc;
     margin-top: 20px;
